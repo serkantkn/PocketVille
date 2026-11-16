@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PocketVille — Grow a village into a metropolis</title>
+<meta name="description" content="PocketVille is a city builder in your pocket: lay roads, paint zones and watch settlers build a village that grows into a metropolis. Free beta for Android and Mac. No ads.">
+<meta name="theme-color" content="#0e1e3e">
+<meta property="og:type" content="website">
+<meta property="og:title" content="PocketVille — Grow a village into a metropolis">
+<meta property="og:description" content="A city builder in your pocket. Lay roads, paint zones, and settlers build the rest. Free beta for Android and Mac, no ads.">
+<meta property="og:image" content="https://serkantkn.github.io/PocketVille/assets/og.jpg">
+<meta property="og:url" content="https://serkantkn.github.io/PocketVille/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/icon-64.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/icon-180.png">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body data-era="village">
+
+<header class="hero" id="top">
+  <div class="sky" aria-hidden="true"><div class="stars"></div><div class="glow"></div></div>
+
+  <nav class="nav">
+    <a class="brand" href="#top"><img src="assets/icon-64.png" alt="" width="36" height="36"><span>PocketVille</span></a>
+    <div class="nav-links">
+      <a href="#features" data-i18n="nav.features">Features</a>
+      <a href="#eras" data-i18n="nav.eras">Eras</a>
+      <a href="#gallery" data-i18n="nav.shots">Screenshots</a>
+      <a href="#download" class="nav-cta" data-i18n="nav.download">Download</a>
+    </div>
+    <button class="pill lang-btn" id="langBtn" type="button" aria-label="Türkçe'ye geç">TR</button>
+  </nav>
+
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="badge"><span class="dot"></span><span data-i18n="hero.badge">Beta 1 · free for Android and Mac</span></p>
+      <h1 class="title">Pocket<span>Ville</span></h1>
+      <p class="tagline" data-i18n="hero.tagline">Grow a village into a metropolis.</p>
+      <p class="lead" data-i18n="hero.lead">Lay the roads, paint the zones, and settlers build their own homes, shops and factories. Keep the water running and the traffic moving, and your little island grows from a market square into a skyline. No ads, no rush.</p>
+      <div class="cta">
+        <a class="btn primary" href="#download" data-i18n="hero.cta">Download free</a>
+        <a class="btn ghost" href="#features" data-i18n="hero.more">What's inside?</a>
+      </div>
+    </div>
+
+    <figure class="viewer" id="viewer">
+      <div class="viewer-frame">
+        <img class="era-img" data-for="village" src="assets/eras/village.webp" width="1080" height="940" alt="A village of timber houses, fields and a market square on a small island" data-i18n-alt="era.villageAlt">
+        <img class="era-img" data-for="modern" src="assets/eras/modern.webp" width="1080" height="940" alt="The same island in the modern era: apartment blocks and factories beside old village houses" data-i18n-alt="era.modernAlt" loading="lazy">
+        <img class="era-img" data-for="metro" src="assets/eras/metro.webp" width="1080" height="940" alt="The island as a metropolis, covered in glass towers" data-i18n-alt="era.metroAlt" loading="lazy">
+        <img class="era-img" data-for="night" src="assets/eras/night.webp" width="1080" height="940" alt="The metropolis at night, windows lit" data-i18n-alt="era.nightAlt" loading="lazy">
+        <div class="viewer-hud" aria-live="polite">
+          <span class="hud-day" id="hudDay">Day 62</span>
+          <span class="hud-pop"><b id="hudPop">2,150</b> <span data-i18n="hud.people">people</span></span>
+        </div>
+      </div>
+      <div class="era-tabs" role="tablist" aria-label="Eras">
+        <button type="button" role="tab" data-era="village" aria-selected="true"><span data-i18n="era.village">Village</span></button>
+        <button type="button" role="tab" data-era="modern" aria-selected="false"><span data-i18n="era.modern">Modern</span></button>
+        <button type="button" role="tab" data-era="metro" aria-selected="false"><span data-i18n="era.metro">Metropolis</span></button>
+        <button type="button" role="tab" data-era="night" aria-selected="false"><span data-i18n="era.night">At night</span></button>
+      </div>
+      <figcaption class="hint" data-i18n="hero.hint">One island as it grows, straight from the game. Tap an era.</figcaption>
+    </figure>
+  </div>
+</header>
+
+<main>
+  <section class="stats" aria-label="At a glance">
+    <ul>
+      <li class="reveal"><b>4</b><span data-i18n="stats.eras">eras, village to metropolis</span></li>
+      <li class="reveal"><b>140+</b><span data-i18n="stats.buildings">building designs</span></li>
+      <li class="reveal"><b>6</b><span data-i18n="stats.langs">languages</span></li>
+      <li class="reveal"><b>0</b><span data-i18n="stats.ads">ads</span></li>
+    </ul>
+  </section>
+
+  <section class="features" id="features">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="feat.eyebrow">What's inside</p>
+      <h2 data-i18n="feat.title">You plan the city. The people build it.</h2>
+    </div>
+    <div class="cards">
+      <article class="card reveal">
+        <div class="art"><img src="assets/sprites/house_m_1.webp" alt="" style="--x:24%;--w:30%"><img src="assets/sprites/g_2_c_1_3_0.webp" alt="" style="--x:52%;--w:30%"><img src="assets/sprites/g_1_i_1_1_0_x.webp" alt="" style="--x:80%;--w:44%"></div>
+        <div class="rci" aria-hidden="true"><i class="r"></i><i class="c"></i><i class="i"></i></div>
+        <h3 data-i18n="f1.t">Zone it, they build it</h3>
+        <p data-i18n="f1.d">Paint residential, commercial and industrial zones next to your roads. If there's demand, settlers move in and build. Watch the three demand bars and give the city what it's asking for.</p>
+      </article>
+      <article class="card reveal">
+        <div class="art"><img src="assets/sprites/house_n_0.webp" alt="" style="--x:16%;--w:24%"><img src="assets/sprites/g_1_r_1_2_0.webp" alt="" style="--x:38%;--w:24%"><img src="assets/sprites/g_2_r_2_3_0.webp" alt="" style="--x:60%;--w:22%"><img src="assets/sprites/g_3_r_2_3_1.webp" alt="" style="--x:82%;--w:20%"></div>
+        <h3 data-i18n="f2.t">Four eras</h3>
+        <p data-i18n="f2.d">Start with timber houses and a well, then grow through the industrial age, the modern city and the metropolis. Neighbourhoods rebuild in the new style once electricity reaches them, so old quarters stand next to new ones.</p>
+      </article>
+      <article class="card reveal">
+        <div class="art"><img src="assets/sprites/c_water_pump.webp" alt="" style="--x:18%;--w:28%"><img src="assets/sprites/c_wind_turbine.webp" alt="" style="--x:44%;--w:20%"><img src="assets/sprites/c_fire_station.webp" alt="" style="--x:72%;--w:32%"></div>
+        <h3 data-i18n="f3.t">Utilities and services</h3>
+        <p data-i18n="f3.d">Water and power flow along your roads. Police, fire, clinics, schools, parks and waste each cover an area, and each has a budget. Buildings left without them empty out, and land value tells you where it hurts.</p>
+      </article>
+      <article class="card reveal">
+        <div class="art"><img src="assets/sprites/c_tram_stop.webp" alt="" style="--x:24%;--w:34%"><img src="assets/sprites/c_bus_stop.webp" alt="" style="--x:56%;--w:30%"><img src="assets/sprites/c_metro_station.webp" alt="" style="--x:82%;--w:28%"></div>
+        <h3 data-i18n="f4.t">Traffic that's real</h3>
+        <p data-i18n="f4.d">Every commute and shopping trip takes a real route, and roads jam when they fill up. Upgrade to avenues and boulevards, lay one-way streets and tree-lined roads, and run trams, buses and the metro.</p>
+      </article>
+      <article class="card reveal">
+        <div class="art"><img src="assets/sprites/market.webp" alt="" style="--x:30%;--w:44%"><img src="assets/sprites/c_stadium.webp" alt="" style="--x:74%;--w:44%"></div>
+        <h3 data-i18n="f5.t">A city with a life of its own</h3>
+        <p data-i18n="f5.d">Windows light up at dusk, cars and people fill the streets, factories smoke. Fires break out where the fire service can't reach. Festivals, tourists and trade missions turn up, and your advisors tell you what's wrong.</p>
+      </article>
+      <article class="card reveal">
+        <div class="art"><img src="assets/sprites/c_sky_tower.webp" alt="" style="--x:28%;--w:20%"><img src="assets/sprites/c_future_spire.webp" alt="" style="--x:52%;--w:22%"><img src="assets/sprites/c_central_park.webp" alt="" style="--x:80%;--w:38%"></div>
+        <h3 data-i18n="f6.t">It keeps going while you're away</h3>
+        <p data-i18n="f6.d">A game day is about a real minute, and the city keeps living for up to 12 hours while the app is closed. Sign in if you like and your city follows you between your phones.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="eras" id="eras">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="eras.eyebrow">Era by era</p>
+      <h2 data-i18n="eras.title">From a market square to a skyline</h2>
+      <p class="sub" data-i18n="eras.sub">Each era unlocks new zones, roads and buildings. The heart of the city grows with you.</p>
+    </div>
+    <ol class="timeline">
+      <li class="reveal"><img src="assets/sprites/castle.webp" alt="" width="529" height="362" loading="lazy"><h3 data-i18n="e1.t">Village</h3><p class="when" data-i18n="e1.w">Where you start</p><p data-i18n="e1.d">Paths, wells, a market, a chapel and a watch post. Houses with gardens and little workshops.</p></li>
+      <li class="reveal"><img src="assets/sprites/hall_1.webp" alt="" width="470" height="338" loading="lazy"><h3 data-i18n="e2.t">Industrial</h3><p class="when" data-i18n="e2.w">800 people</p><p data-i18n="e2.d">Power plants, water pumps, factories with truck yards, schools, the train station and trams.</p></li>
+      <li class="reveal"><img src="assets/sprites/hall_2.webp" alt="" width="506" height="327" loading="lazy"><h3 data-i18n="e3.t">Modern</h3><p class="when" data-i18n="e3.w">4,000 people and a university</p><p data-i18n="e3.d">High density, hospitals, police and fire stations, buses, boulevards, highways and an airport.</p></li>
+      <li class="reveal"><img src="assets/sprites/hall_3.webp" alt="" width="469" height="495" loading="lazy"><h3 data-i18n="e4.t">Metropolis</h3><p class="when" data-i18n="e4.w">20,000 people and a landmark tower</p><p data-i18n="e4.d">Glass towers, the metro, wind and solar power, recycling, and landmarks that bring in tourists.</p></li>
+    </ol>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="gal.eyebrow">Screenshots</p>
+      <h2 data-i18n="gal.title">Every building comes out of Blender</h2>
+      <p class="sub" data-i18n="gal.sub">Houses, towers, stations and road pieces are modelled in Blender and rendered under the same light. Swipe through.</p>
+    </div>
+    <div class="shots" id="shots">
+      <figure class="reveal"><img src="assets/shots/village.webp" width="540" height="1145" loading="lazy" alt="Village era: timber houses, fields, a market and the town hall" data-i18n-alt="gal.a1"><figcaption data-i18n="gal.c1">The village</figcaption></figure>
+      <figure class="reveal"><img src="assets/shots/modern.webp" width="540" height="1145" loading="lazy" alt="Modern era: apartment blocks and factories beside old village houses" data-i18n-alt="gal.a2"><figcaption data-i18n="gal.c2">The modern city</figcaption></figure>
+      <figure class="reveal"><img src="assets/shots/close.webp" width="540" height="1145" loading="lazy" alt="Close-up of the civic centre, a glass tower beside a market and train station" data-i18n-alt="gal.a3"><figcaption data-i18n="gal.c3">Downtown, up close</figcaption></figure>
+      <figure class="reveal"><img src="assets/shots/night.webp" width="540" height="1145" loading="lazy" alt="The metropolis at night with lit windows" data-i18n-alt="gal.a4"><figcaption data-i18n="gal.c4">Night falls</figcaption></figure>
+      <figure class="reveal"><img src="assets/shots/traffic.webp" width="540" height="1145" loading="lazy" alt="Traffic layer: roads coloured green, yellow and red by load" data-i18n-alt="gal.a5"><figcaption data-i18n="gal.c5">Traffic layer</figcaption></figure>
+      <figure class="reveal"><img src="assets/shots/advisors.webp" width="540" height="1145" loading="lazy" alt="Advisors window listing finance, utilities, safety, health, zoning, transport and environment" data-i18n-alt="gal.a6"><figcaption data-i18n="gal.c6">Your advisors</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="download" id="download">
+    <div class="panel reveal">
+      <p class="eyebrow" data-i18n="dl.eyebrow">Download</p>
+      <h2 data-i18n="dl.title">Your island is waiting</h2>
+      <p class="version"><span data-i18n="dl.version">Latest version:</span> <b id="relName">PocketVille 1.0.0 beta 1</b></p>
+      <div class="platforms">
+        <div class="platform">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="13" y="4" width="22" height="40" rx="5"/><rect x="17" y="9" width="14" height="27" rx="1.5" class="screen"/><circle cx="24" cy="40" r="1.6" class="screen"/></svg>
+          <h3>Android</h3>
+          <p data-i18n="dl.android">Phones and tablets · Android 9 or later</p>
+          <a class="btn primary" id="apkLink" href="https://github.com/serkantkn/PocketVille/releases/download/v1.0.0_beta-1/PocketVille-1.0.0_beta-1.apk"><span data-i18n="dl.apk">Download APK</span> <small id="apkSize">54 MB</small></a>
+        </div>
+        <div class="platform">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="7" y="9" width="34" height="23" rx="3"/><rect x="10.5" y="12.5" width="27" height="16" rx="1" class="screen"/><path d="M3 35h42l-3 4H6z"/></svg>
+          <h3>Mac</h3>
+          <p data-i18n="dl.mac">Apple silicon Macs (M1 and later)</p>
+          <a class="btn primary" id="dmgLink" href="https://github.com/serkantkn/PocketVille/releases/download/v1.0.0_beta-1/PocketVille-1.0.0_beta-1-mac.dmg"><span data-i18n="dl.dmg">Download DMG</span> <small id="dmgSize">87 MB</small></a>
+        </div>
+        <div class="platform soon">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="5" width="22" height="38" rx="5"/><rect x="11.5" y="10" width="15" height="28" rx="1.5" class="screen"/><rect x="26" y="15" width="16" height="25" rx="3"/><rect x="28.5" y="18" width="11" height="19" rx="1" class="screen"/></svg>
+          <h3 data-i18n="dl.iosT">iPhone and iPad</h3>
+          <p data-i18n="dl.ios">Ready; coming through the App Store</p>
+          <span class="btn ghost disabled" data-i18n="dl.soon">Coming soon</span>
+        </div>
+      </div>
+      <p class="sync" data-i18n="dl.sync">Cloud save is optional: sign in with Google on Android, or with Apple or Google on iPhone, and your city moves between your devices. Everything works without an account. The Mac version keeps its city on the Mac for now.</p>
+      <details class="howto">
+        <summary data-i18n="dl.howto">Trouble installing?</summary>
+        <div class="howto-body">
+          <p><b>Android:</b> <span data-i18n="dl.howA">Download the APK and open it. Your phone may ask you to allow installs from this source; allow it and finish the install.</span></p>
+          <p><b>Mac:</b> <span data-i18n="dl.howM">Open the DMG and drag PocketVille into Applications. The app isn't notarized by Apple yet, so macOS stops it the first time: open System Settings → Privacy &amp; Security and press “Open Anyway” at the bottom.</span></p>
+          <p data-i18n="dl.howB">This is a beta, so you may run into bugs. Opening an issue on GitHub helps a lot.</p>
+        </div>
+      </details>
+      <p class="all"><a href="https://github.com/serkantkn/PocketVille/releases" data-i18n="dl.all">All releases and release notes →</a></p>
+    </div>
+  </section>
+
+  <section class="privacy" id="privacy">
+    <div class="note reveal">
+      <h2 data-i18n="pv.title">Privacy</h2>
+      <p data-i18n="pv.p1">No ads, analytics or tracking. If you don't sign in, your city stays on your device.</p>
+      <p data-i18n="pv.p2">If you sign in, your city save and the name of the device that saved it are stored in Google Firebase under your account. You can delete your account and cloud save at any time from Settings in the game.</p>
+      <p data-i18n="pv.p3">At launch the game asks the internet for the time, so moving the clock forward doesn't pay off. This site uses no cookies; it only asks GitHub for the latest version.</p>
+      <p class="pv-links"><a href="privacy.html">Privacy policy · Gizlilik politikası</a> · <a href="account-deletion.html">Account deletion · Hesap silme</a></p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <a class="brand" href="#top"><img src="assets/icon-64.png" alt="" width="32" height="32"><span>PocketVille</span></a>
+    <nav>
+      <a href="https://github.com/serkantkn/PocketVille/releases" data-i18n="ft.releases">Releases</a>
+      <a href="https://github.com/serkantkn/PocketVille/issues" data-i18n="ft.issues">Report a bug</a>
+      <a href="privacy.html" data-i18n="ft.privacy">Privacy</a>
+    </nav>
+    <p class="small" data-i18n="ft.note">Every picture on this page comes from the game itself.</p>
+  </div>
+</footer>
+
+<script src="assets/site.js" defer></script>
+</body>
+</html>
